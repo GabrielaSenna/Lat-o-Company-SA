@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Voos.css">
+    <title>Passagens e voos</title>
+</head>
+<body>
+    <div class="header">
+       <h1>Apenas alguns passos para sua viagem.</h1> 
+       <p>Siga os passos abaixo para realizar a compra da sua passagem.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Voos.html">Voos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="QuemSomos.html">Quem somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Entrar
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Cadastro.html">Cadastre-se</a></li>
+                <li><a class="dropdown-item" href="Login.html">Faça Login</a></li>
+              </ul>
+            </li>
+    
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="pesquise aqui" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <div>
+        <h3>Escolha o seu destino</h3>
+    </div>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="img/Locais/Florida.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Florida, Miami</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Locais/Maldivas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Maldivas</p>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img src="img/Locais/Manaus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Manaus</p>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img src="img/Locais/cancun.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Cancun, México</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Locais/Salvador.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Salvador, Bahia</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="form" padding:10px>
+      <h2>Insira abaixo os dados do destino</h2>
+      <label for="exampleDataList" class="form-label">Selecione seu destino</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Selecione...">
+      <datalist id="datalistOptions">
+          <option value="Flórida">
+          <option value="Maldivas">
+          <option value="Manaus">
+          <option value="Cancun">
+          <option value="Salvador">
+      </datalist>
+      <br><br>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Escolher datas</button>
+      </div>
+      <br><br>
+      <h2>Agora, insira os dados do(s) passageiro(s)</h2>
+
+      <div class="input-group" m-3>
+        <span class="input-group-text">Nome e sobrenome</span>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+      </div>
+      <br>
+      <h4>O passageiro é maior de idade? Caso não, selecione</h4>
+      <div class="input-group">
+        <div class="input-group-text">
+          <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+        </div>
+        <br>
+        <input type="text" class="form-control" aria-label="Text input with radio button">
+      </div>
+      <br>
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">CPF</label>
+          <input type="number" class="form-control"  placeholder="123.456.789-10">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label"> N° do RG</label>
+          <input type="number" class="form-control" placeholder="xxx.xxx.xxx-xx"  >
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputAddress" placeholder="VoosLatao@gmail.com">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Rua das Flores, 100">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cidade de Origem</label>
+          <input type="text" class="form-control" placeholder="Londrina">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Estado</label>
+          <select id="inputState" class="form-select" >
+            <option selected>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Florianópolis</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Aeroporto</label>
+          <input type="text" class="form-control" placeholder="Ex. Guarulhos">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Salvar dados
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Ir para pagamento</button>
+        </div>
+      </form>
+
+    </div>
+    
+</body>
+</html>
